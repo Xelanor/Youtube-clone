@@ -4,13 +4,13 @@ const MovieDescription = (props) => {
   return (
     <div className="flex flex-col">
       <div className="flex mt-2 mb-1 text-white text-lg font-medium movie-desc">
-        Avengers: End Game Avengers: End Game Avengers: End Game
+        {props.movie.title}
       </div>
       <div className="flex text-clone4 text-sm font-normal">
-        2018
+        {props.movie.year}
       </div>
       <div className="flex text-clone4 text-sm font-normal">
-        120 Görüntülenme
+        {props.movie.views} Görüntülenme
       </div>
     </div>
   );

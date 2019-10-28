@@ -9,7 +9,7 @@ const Movie = (props) => {
         className="down"
         allow="autoplay"
         allowfullscreen="true"
-        src="https://www.youtube.com/embed/TcMBFSGVi1c"
+        src={props.movie.link}
         allowfullscreen="allowfullscreen"
         mozallowfullscreen="mozallowfullscreen"
         msallowfullscreen="msallowfullscreen"

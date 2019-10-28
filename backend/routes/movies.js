@@ -9,6 +9,13 @@ router.route('/').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+// Get oll movies in descending order with X limit
+router.route('/:id').get((req, res) => {
+  Movie.findById(req.params.id)
+    .then(req => res.json(req))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+
 // Add new post 
 router.route('/add').post((req, res) => {
   const title = req.body.title;
