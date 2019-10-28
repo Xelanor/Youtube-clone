@@ -7,7 +7,7 @@ import classes from './MovieBoxes.module.css'
 const MovieBoxes = (props) => {
   let data = props.movies
   let movies = data.map(movie => {
-    return <MovieBox />
+    return <MovieBox key={movie._id} movie={movie} />
   })
   return (
     <div className="flex flex-wrap justify-center">

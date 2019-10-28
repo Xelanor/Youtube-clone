@@ -6,18 +6,18 @@ import classes from './MovieBox.module.css'
 const MovieBox = (props) => {
   return (
     <div className={classes.movieBox + " mr-1 mb-6"}>
-      <Link to="/izle?f=123asdf235123">
+      <Link to={`/izle?f=${props.movie._id}`}>
         <div className="w-full">
-          <img className="w-full" src="https://i.ytimg.com/vi/TcMBFSGVi1c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCfjWZT0nq_NRhPPPiJMeyDpO1zNw" />
+          <img className="w-full" src={props.movie.thumbnail} />
         </div>
         <div className={classes.movieTitle + " flex mt-2 mb-1 text-white text-base font-medium movie-desc"}>
-          Avengers: End Game Avengers: End Game Avengers: End Game
+          {props.movie.title}
         </div>
         <div className="flex text-clone4 text-xs font-normal">
-          2018
+          {props.movie.year}
         </div>
         <div className="flex text-clone4 text-xs font-normal">
-          120 Görüntülenme
+          {props.movie.views} görüntülenmme
         </div>
       </Link>
     </div>
