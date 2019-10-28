@@ -32,5 +32,12 @@ router.route('/add').post((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+// Get oll movies in descending order with X limit
+router.route('/increment-view/:id').get((req, res) => {
+  Movie.findByIdAndUpdate(req.params.id, { $inc: { 'views': 1 } })
+    .exec()
+    .then(req => res.json(req))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
 
 module.exports = router;

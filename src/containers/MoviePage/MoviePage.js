@@ -14,8 +14,11 @@ class MoviePage extends Component {
     movie: null
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     const values = queryString.parse(this.props.location.search)
+
+    await axios.get(`/api/movies/increment-view/${values.f}`)
+      .catch(err => console.log(err))
 
     axios.get(`/api/movies/${values.f}`)
       .then(res => this.setState({ movie: res.data }))

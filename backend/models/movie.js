@@ -18,7 +18,8 @@ const movieSchema = new Schema({
   },
   genres: [String],
   views: {
-    type: Number
+    type: Number,
+    default: 0
   },
   thumbnail: {
     type: String
