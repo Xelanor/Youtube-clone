@@ -9,7 +9,9 @@ class Header extends Component {
     return (
       <header className="flex flex-row fixed w-full t-0 l-0 h-16 bg-clone3 z-50" style={{ backgroundColor: "rgb(49, 48, 48)" }}>
         <div id="logo" className="flex flex-row pb-1 relative text-clone text-4xl font-semibold">
-          Youtube
+          <Link to="/">
+            Youtube
+          </Link>
         </div>
         <div id="main-header" className="w-full flex flex-row relative">
           <div id="search" className="flex flex-row">

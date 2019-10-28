@@ -1,0 +1,26 @@
+.content {
+  padding-left: 230px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .content {
+    padding-left: 0px;
+  }
+  .movie {
+    width: 100% !important;
+  }
+
+  .related {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+}
+
+.movie {
+  width: 1100px;
+}
+
+.related {
+  min-width: 400px;
+  width: 450px;
+}

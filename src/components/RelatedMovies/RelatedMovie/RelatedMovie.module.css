@@ -1,0 +1,21 @@
+.movieTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 21px; /* fallback */
+  max-height: 42px; /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.Image {
+  width: 180px;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .Image {
+    width: 168px !important;
+    height: auto;
+  }
+}

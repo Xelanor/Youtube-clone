@@ -10,13 +10,13 @@ const MovieBox = (props) => {
         <div className="w-full">
           <img className="w-full" src="https://i.ytimg.com/vi/TcMBFSGVi1c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCfjWZT0nq_NRhPPPiJMeyDpO1zNw" />
         </div>
-        <div className={classes.movieTitle + " flex mt-2 mb-1 text-white text-lg font-medium movie-desc"}>
+        <div className={classes.movieTitle + " flex mt-2 mb-1 text-white text-base font-medium movie-desc"}>
           Avengers: End Game Avengers: End Game Avengers: End Game
         </div>
-        <div className="flex text-clone4 text-sm font-normal">
+        <div className="flex text-clone4 text-xs font-normal">
           2018
         </div>
-        <div className="flex text-clone4 text-sm font-normal">
+        <div className="flex text-clone4 text-xs font-normal">
           120 Görüntülenme
         </div>
       </Link>

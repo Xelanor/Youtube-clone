@@ -6,7 +6,7 @@ class Sidebar extends Component {
   state = {}
   render() {
     return (
-      <sidebar className={classes.sidebar + " fixed l-0 h-full"} style={{ backgroundColor: "rgb(49, 48, 48)" }}>
+      <sidebar className={classes.sidebar + " fixed l-0 h-full hidden xl:flex"} style={{ backgroundColor: "rgb(49, 48, 48)" }}>
         Sidebar
       </sidebar>
     );
