@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildcss": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "buildcss": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "netlifybuild": "yarn buildcss && yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
